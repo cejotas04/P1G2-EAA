@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Avance 7</h1>
+<hr>
+<p>factorial de un numero</p>
+<button onclick="FactorialNumero()">FactorialNumero</button>
+
+<p>Sumar el factorial de dos numeros</p>
+<button onclick="SumarFactorialAyB()">SumarFactoriaAyB</button>
+
+<script>
+function SumarFactorialAyB (){
+    var numeroA = 5
+    var numeroB = 5
+
+    var resultadoA = FactorialNumero(numeroA)
+    var resultadoB = FactorialNumero(numeroB)
+
+    var resultadoFinal = resultadoA + resultadoB
+    alert(resultadoFinal)
+}
+
+function FactorialNumero(numero){
+    var i = 1
+    var resultado = 1
+    while( i <= numero){
+        resultado = resultado *1
+        i = i + 1
+    }
+    alert(resultado)
+    return(resultado)
+}
+</script>
+</body>
+</html>
