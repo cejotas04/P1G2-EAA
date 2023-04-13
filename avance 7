@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html>
-<body>
+<cuerpo>
 <h1>Avance 7</h1>
 <hr>
-<p>factorial de un numero</p>
-<button onclick="FactorialNumero()">FactorialNumero</button>
+<p>factorial de un número</p>
+<button onclick="FactorialNumero(5)">NúmeroFactorial</button>
 
 <p>Sumar el factorial de dos numeros</p>
 <button onclick="SumarFactorialAyB()">SumarFactoriaAyB</button>
-
+<br>
+<p>EjercicioUno</p>
+<button onclick="EjercicioUno()">EjercicioUno</button>
+<br>
+<p>EjercicioDos</p>
+<button onclick="EjercicioDos()">EjercicioDos</button>
+<br>
+<p>EjercicioTres</p>
+<button onclick="EjercicioTres()">EjercicioTres</button>
+<br>
+<p>EjercicioCuatro</p>
+<button onclick="EjercicioCuatro()">EjercicioCuatro</button>
+<br>
 <script>
-function SumarFactorialAyB (){
+function SumarFactorialAyB(){
     var numeroA = 5
     var numeroB = 5
 
@@ -25,12 +37,100 @@ function FactorialNumero(numero){
     var i = 1
     var resultado = 1
     while( i <= numero){
-        resultado = resultado *1
+        resultado = resultado * i
         i = i + 1
     }
-    alert(resultado)
-    return(resultado)
+    alert (resultado)
+    return (resultado)
 }
+//CODIGO DE PROGRAMACION - INICIO
+
+ function CondicionalAnidada_UsandoO(){
+    if(5>9){
+        if(7!=5){
+            alert("TRUE")
+        }else{
+            alert("FALSE")
+
+        }
+    }else{
+        alert("FALSE")
+    }
+}
+//CONDICIONALES COMPUESTAS ||
+function  CondicionalCompuesta_UsandoO(){
+    if((5<=9)||(7!=5)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+//CONDICIONALES ANIDADAS ||
+function CondicionalAnidada_UsandoO(){
+    if(5>9){
+        if(7!=5){
+            alert("TRUE")
+        }else{
+            alert("FALSE")
+
+        }
+    }else{
+        alert("FALSE")
+    }
+}
+//CONDICIONALES COMPUESTAS 
+function  CondicionalCompuesta_UsandoY(){
+    if((5<=9)&&(7!=5)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+//CONDICIONALES ANIDADAS
+function CondicionalAnidada_UsandoY(){
+    if(5>9){
+        if(7!=5){
+            alert("TRUE")
+        }else{
+            alert("FALSE")
+
+        }
+    }else{
+        alert("FALSE")
+    }
+}
+function  EjercicioUno(){
+    if(((5 >= 5) == (9 < 10)) || ((10 >= 10) == false)) {
+        alert ("true")
+        } else {
+        alert ("FALSE")
+    }
+}
+
+
+function  EjercicioDos(){
+    if(((9 > 5) != true) || (false || (5 <= 9))){
+        alert ("true")
+        } else {
+        alert ("FALSE")
+    }
+}
+function  EjercicioTres(){
+    if((((7<=7)==true)||(false==true))||!(7<7)){
+               alert ("true")
+        } else {
+        alert ("FALSE")
+    }
+}
+function  EjercicioCuatro(){
+    if(((true||false)||(false))!=((false && false)!=(true))){
+        alert ("true")
+        } else {
+        alert ("FALSE")
+    }
+}
+
 </script>
 </body>
 </html>
+
