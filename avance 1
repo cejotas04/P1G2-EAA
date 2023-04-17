@@ -1,0 +1,52 @@
+FOR.
+Una expresión para ser evaluada al final de cada iteración del bucle. Esto ocurre antes de la siguiente evaluación de la condicion . Generalmente se usa para actualizar o incrementar la variable contador. Una sentencia que se ejecuta mientras la condición se evalúa como verdadera.
+
+for (var i = 0; i < 9; i++) {
+  n += i;
+  mifuncion(n);
+}
+
+WHILE:
+La sentencia (hacer mientras) crea un bucle que ejecuta una sentencia especificada, hasta que la condición de comprobación se evalúa como falsa. La condición se evalúa después de ejecutar la sentencia, dando como resultado que la sentencia especificada se ejecute al menos una vez.
+
+n = 0;
+x = 0;
+while (n < 3) {
+  n ++;
+  x += n;
+}
+
+IF:
+IF es una estructura de control utilizada para tomar decisiones. Es un condicional que sirve para realizar unas u otras operaciones en función de una expresión. Funciona de la siguiente manera, primero se evalúa una expresión, si da resultado positivo se realizan las acciones relacionadas con el caso positivo.
+
+if (condición1)
+   sentencia1
+else if (condición2)
+   sentencia2
+else if (condición3)
+   sentencia3
+...
+else
+   sentenciaN
+   
+ CASE;
+ Si ocurre una coincidencia, el programa ejecuta las declaraciones asociadas correspondientes. Si la expresión coincide con múltiples entradas, la primera será la seleccionada, incluso si las mayúsculas son tenidas en cuenta.
+ 
+ 
+ var foo = 0;
+switch (foo) {
+  case -1:
+    console.log('1 negativo');
+    break;
+  case 0: // foo es 0, por lo tanto se cumple la condición y se ejecutara el siguiente bloque
+    console.log(0)
+    // NOTA: el "break" olvidado debería estar aquí
+  case 1: // No hay sentencia "break" en el 'case 0:', por lo tanto este caso también será ejecutado
+    console.log(1);
+    break; // Al encontrar un "break", no será ejecutado el 'case 2:'
+  case 2:
+    console.log(2);
+    break;
+  default:
+    console.log('default');
+}
